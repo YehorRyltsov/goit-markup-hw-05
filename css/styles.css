@@ -14,8 +14,8 @@ h3 {
   margin: 0;
 }
 ul {
-  margin-left: 0;
-  padding: 0;
+  margin: 0;
+  padding-left: 0;
 }
 img {
   display: block;
@@ -31,8 +31,8 @@ img {
 }
 .container {
   width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 .header {
@@ -64,10 +64,8 @@ img {
 
 .header-list {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
-.header-link {
+.header-link-item {
   margin-right: 50px;
 }
 
@@ -87,6 +85,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .header-link:hover {
   color: var(--header-link-color);
@@ -337,11 +337,12 @@ img {
   fill: #ffffff;
 }
 .company-box {
+  padding-top: 92px;
+  padding-bottom: 96px;
 }
 .company-title {
   display: block;
   font-weight: 700;
-  margin-top: 92px;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -351,7 +352,7 @@ img {
 .company-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 89px;
+  /* margin-bottom: 89px; */
 }
 .company-icon-link {
   display: flex;
@@ -399,6 +400,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 20px;
 }
 .footer-logo-web {
   color: #2196f3;
@@ -461,6 +463,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-bottom: 20px;
 }
 .footer-block {
   display: flex;
@@ -492,14 +495,16 @@ img {
 .active {
   color: var(--hov-foc);
 }
-.herop {
-  background-color: #ffffff;
-  padding-top: 108px;
+
+.hero-portfolio {
+  padding-top: 94px;
   padding-bottom: 94px;
+  background: #ffffff;
 }
 .herop-list {
   display: flex;
   justify-content: center;
+  padding-bottom: 50px;
 }
 .herop-button-item:not(:last-child) {
   margin-right: 8px;
@@ -532,10 +537,7 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-.hero-portfolio {
-  margin-bottom: 94px;
-  background: #ffffff;
-}
+
 .hero-portfolio-list {
   display: flex;
   flex-wrap: wrap;

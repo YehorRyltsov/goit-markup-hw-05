@@ -269,13 +269,6 @@ img {
 .hiw {
   padding-bottom: 94px;
 }
-.hiw-list {
-  display: flex;
-  justify-content: center;
-}
-.hiw-item:not(:last-child) {
-  margin-right: 30px;
-}
 .hiw-title {
   font-size: 36px;
   line-height: 1.17;
@@ -283,6 +276,34 @@ img {
   letter-spacing: 0.03em;
   color: var(--header-color);
   margin-bottom: 50px;
+}
+.hiw-list {
+  display: flex;
+  justify-content: center;
+}
+.hiw-item:not(:last-child) {
+  margin-right: 30px;
+}
+.hiw-item {
+  position: relative;
+}
+.hiw-up-box {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+.hiw-up-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 .comand {
   background: #f5f4fa;
@@ -376,7 +397,6 @@ img {
 .company-list {
   display: flex;
   justify-content: center;
-  /* margin-bottom: 89px; */
 }
 .company-icon-link {
   display: flex;
@@ -387,17 +407,18 @@ img {
   width: 100%;
   height: 100%;
   padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   transition: fill 250ms, border-radius 250ms;
 }
 .company-item {
   width: 170px;
   height: 92px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
 }
 .company-icon-link:hover {
   fill: #2196f3;
   border: 1px solid #2196f3;
+  transition: fill 250ms;
 }
 .company-icon-link:focus svg {
   fill: #2196f3;
@@ -525,13 +546,9 @@ img {
 }
 .active {
   color: var(--hov-foc);
-  /* border-bottom: 4px solid #2196f3;
-  /* background-color: #2196f3; */
-  /* border-radius: 2px; */
 }
 
 .hero-portfolio {
-  /* padding-top: 94px; */
   padding-bottom: 94px;
   background: #ffffff;
 }
@@ -611,6 +628,7 @@ img {
   padding: 63px 24px;
   height: 100%;
   transform: translateY(100%);
+  transition: transform 250ms;
   overflow: auto;
 }
 .herop-text {
@@ -642,7 +660,7 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  transform: opacity 250ms, visibility 250ms;
+  transition: opacity 250ms, visibility 250ms, transform 250ms;
 }
 .modal {
   width: 528px;

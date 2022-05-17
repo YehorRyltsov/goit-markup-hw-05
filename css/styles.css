@@ -663,4 +663,6 @@ img {
   border-radius: 50%;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  fill: #000000;
 }

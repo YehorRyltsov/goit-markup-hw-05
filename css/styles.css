@@ -64,6 +64,8 @@ img {
 
 .header-list {
   display: flex;
+  position: relative;
+  height: 100%;
 }
 .header-link-item {
   margin-right: 50px;
@@ -86,7 +88,7 @@ img {
   letter-spacing: 0.02em;
   color: #212121;
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 28px;
   transition: color 250ms;
 }
 .header-link:hover {
@@ -94,6 +96,19 @@ img {
 }
 .header-link:focus {
   color: var(--header-link-color);
+}
+.header-link-item {
+  position: relative;
+  height: 100%;
+}
+.header-link-line {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  top: 46px;
+  border: 2px solid #2196f3;
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 .header-mail {
   font-weight: 500;
@@ -510,6 +525,9 @@ img {
 }
 .active {
   color: var(--hov-foc);
+  /* border-bottom: 4px solid #2196f3;
+  /* background-color: #2196f3; */
+  /* border-radius: 2px; */
 }
 
 .hero-portfolio {
